@@ -2,7 +2,7 @@ import { Entity, Column, PrimaryGeneratedColumn } from 'typeorm'
 import { Length, IsEmail } from 'class-validator'
 
 @Entity()
-class UserEntity {
+export class User {
   @PrimaryGeneratedColumn()
   id: number;
 
@@ -20,5 +20,3 @@ class UserEntity {
   @IsEmail()
   email: string;
 }
-
-export { UserEntity }
