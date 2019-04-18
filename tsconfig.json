@@ -19,7 +19,7 @@
     ]
   },
   "include": [
-    "./types",
+    "./types/global.d.ts",
     "server/**/*"
   ],
   "exclude": [

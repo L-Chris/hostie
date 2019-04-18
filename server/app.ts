@@ -11,7 +11,7 @@ const MAX_AGE = 1000 * 60 * 5
 
 export default async (port: number) => {
   try {
-    await createConnection({
+    createConnection({
       type: 'mysql',
       host: 'localhost',
       port: 3306,

@@ -1,8 +1,8 @@
 import * as http from 'http'
 import * as parseurl from 'parseurl'
 import { BaseContext } from 'koa'
-import * as portfinder from 'portfinder'
 const whistle = require('whistle')
+const portfinder = require('portfinder')
 
 const startWhistle = port => new Promise((resolve) => {
   whistle({ port }, resolve)
